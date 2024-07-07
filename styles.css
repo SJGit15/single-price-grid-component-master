@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'Karla';
+}
+
+.card {
+    width: 600px;
+    margin: 100px auto 100px auto;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 200px 250px;
+}
+
+.join {
+    background-color: white;
+    grid-column: 1 / span 2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 20px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.join h2 {
+   color: hsl(71, 73%, 54%);
+   font-size: 18px;
+   padding-top: 20px;
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 15px;
+    padding-left: 20px;
+}
+
+.subscription h2, .why h2, span:first-of-type {
+    color: white;
+}
+
+.subscription h2, .why h2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.subscription p {
+    color: hsl(204, 43%, 93%);
+}
+
+.subscription p:first-of-type {
+    padding-top: 15px;
+}
+
+span:first-of-type {
+    font-size: 30px;
+}
+
+span:nth-of-type(2) {
+    color: hsl(204, 43%, 93%);
+    opacity: 0.5;
+    padding-left: 10px;
+}
+
+.subscription p:nth-of-type(2) {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 90px 10px 90px;
+    padding-top: 0;
+}
+
+.why {
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;
+    border-bottom-right-radius: 15px;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+ul {
+    color: hsl(204, 43%, 93%);
+    opacity: 0.8;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    .card, .subscription {
+        width: 300px;
+    }
+
+    .why {
+        height: 250px;
+    }
+
+    h1 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .join h2 {
+        font-size: 15px;
+    }
+
+    .join p, .subscription p {
+        font-size: 12px;
+    }
+
+    .subscription {
+        border-radius: 0;
+        padding-bottom: -200px;
+    }
+
+    .subscription h2 {
+        padding-top: 10px;
+        font-size: 17px;
+    }
+
+    span:nth-of-type(2) {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 10px 80px 10px 80px;
+        padding-top: 0;
+    }
+
+    .why {
+        grid-column-start: 1;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+}
+
